@@ -100,7 +100,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>In this practice activity you’ll continue to work with the titanic dataset in ways that flex what you’ve learned about both data wrangling and data visualization.</p>
-<div id="cell-2" class="cell" data-execution_count="1">
+<p>embed-resources: true</p>
+<div id="cell-3" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the titanic dataset here</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -269,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="filter-the-data-to-include-passengers-only.-calculate-the-joint-distribution-cross-tab-between-a-passengers-class-and-where-they-embarked." class="level2">
 <h2 class="anchored" data-anchor-id="filter-the-data-to-include-passengers-only.-calculate-the-joint-distribution-cross-tab-between-a-passengers-class-and-where-they-embarked.">1. Filter the data to include passengers only. Calculate the joint distribution (cross-tab) between a passenger’s class and where they embarked.</h2>
-<div id="cell-4" class="cell" data-execution_count="5">
+<div id="cell-5" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code here</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_titanic[<span class="st">"type"</span>] <span class="op">=</span> df_titanic[<span class="st">"class"</span>].<span class="bu">map</span>({</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1st"</span>: <span class="st">"passenger"</span>,</span>
@@ -344,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What proportion of 3rd class passengers embarked at Southampton?</li>
 <li>What proportion of Southampton passengers were in 3rd class?</li>
 </ul>
-<div id="cell-6" class="cell" data-execution_count="6">
+<div id="cell-7" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code here</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Given where they embarked</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pd.crosstab(df_titanic_new[<span class="st">"class"</span>],df_titanic_new[<span class="st">"embarked"</span>],normalize<span class="op">=</span><span class="st">'columns'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -397,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div id="cell-7" class="cell" data-execution_count="7">
+<div id="cell-8" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conditional given class</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pd.crosstab(df_titanic_new[<span class="st">"class"</span>],df_titanic_new[<span class="st">"embarked"</span>],normalize<span class="op">=</span><span class="st">'index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
@@ -454,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="make-a-visualization-showing-the-distribution-of-a-passengers-class-given-where-they-embarked." class="level2">
 <h2 class="anchored" data-anchor-id="make-a-visualization-showing-the-distribution-of-a-passengers-class-given-where-they-embarked.">3. Make a visualization showing the distribution of a passenger’s class, given where they embarked.</h2>
 <p>Discuss the pros and cons of using this visualization versus the distributions you calculated before, to answer the previous questions.</p>
-<div id="cell-10" class="cell" data-execution_count="19">
+<div id="cell-11" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code here</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>pd.crosstab(df_titanic_new[<span class="st">"embarked"</span>],df_titanic_new[<span class="st">"class"</span>],normalize<span class="op">=</span><span class="st">'index'</span>).plot(kind <span class="op">=</span> <span class="st">'bar'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -466,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>With this graph, it’s easier to see comparisons between</p>
+<p>With this graph, it’s easier to see comparisons between the columns. The downside of this visualization is we can’t easily see the exact values of our conditional distribution.</p>
 </section>
 
 </main>
