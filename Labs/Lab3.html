@@ -3094,6 +3094,7 @@ vertical-align: -.125em;
   <li><a href="#make-a-phrase-function" id="toc-make-a-phrase-function" class="nav-link" data-scroll-target="#make-a-phrase-function">Make a Phrase Function</a></li>
   <li><a href="#the-sing-day-function" id="toc-the-sing-day-function" class="nav-link" data-scroll-target="#the-sing-day-function">The Sing Day Function</a></li>
   <li><a href="#making-the-entire-song-function" id="toc-making-the-entire-song-function" class="nav-link" data-scroll-target="#making-the-entire-song-function">Making the Entire Song Function</a></li>
+  <li><a href="#song-for-new-data" id="toc-song-for-new-data" class="nav-link" data-scroll-target="#song-for-new-data">Song for New Data</a></li>
   </ul>
 </nav>
 </div>
@@ -3124,7 +3125,7 @@ vertical-align: -.125em;
 </header>
 
 
-<div id="cell-1" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="6">
+<div id="cell-1" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing data</span></span>
@@ -3266,7 +3267,7 @@ vertical-align: -.125em;
 </div>
 <section id="pluralize-gifts-function" class="level2">
 <h2 class="anchored" data-anchor-id="pluralize-gifts-function">Pluralize Gifts Function</h2>
-<div id="cell-3" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="255">
+<div id="cell-3" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pluralize gifts</span></span>
@@ -3299,7 +3300,7 @@ vertical-align: -.125em;
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>pluralize_gift <span class="op">=</span> np.vectorize(pluralize_gift)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-4" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="117">
+<div id="cell-4" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Testing Pluralize gifts</span></span>
@@ -3322,7 +3323,7 @@ geese</code></pre>
 </section>
 <section id="make-a-phrase-function" class="level2">
 <h2 class="anchored" data-anchor-id="make-a-phrase-function">Make a Phrase Function</h2>
-<div id="cell-6" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="323">
+<div id="cell-6" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a phrase</span></span>
@@ -3373,7 +3374,7 @@ geese</code></pre>
 </details>
 </div>
 <p>https://stackoverflow.com/questions/8982163/how-do-i-tell-python-to-convert-integers-into-words This helped me to code a way to turn numbers into words using the inflect package.</p>
-<div id="cell-8" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="353">
+<div id="cell-8" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vector <span class="op">=</span> pd.DataFrame(xmas.loc[<span class="dv">5</span>:<span class="dv">5</span>])</span>
@@ -3397,151 +3398,8 @@ geese</code></pre>
 <pre><code>two  partridges in a pear tree
 two  partridges in a pear tree</code></pre>
 </div>
-<div class="cell-output cell-output-display">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Day</th>
-<th data-quarto-table-cell-role="th">Day.in.Words</th>
-<th data-quarto-table-cell-role="th">Gift.Item</th>
-<th data-quarto-table-cell-role="th">Verb</th>
-<th data-quarto-table-cell-role="th">Adjective</th>
-<th data-quarto-table-cell-role="th">Location</th>
-<th data-quarto-table-cell-role="th">phrase</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>1</td>
-<td>first</td>
-<td>partridge</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>in a pear tree</td>
-<td>a partridge in a pear tree</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2</td>
-<td>second</td>
-<td>dove</td>
-<td>NaN</td>
-<td>turtle</td>
-<td>NaN</td>
-<td>two turtle doves</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3</td>
-<td>third</td>
-<td>hen</td>
-<td>NaN</td>
-<td>french</td>
-<td>NaN</td>
-<td>three french hens</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>4</td>
-<td>fourth</td>
-<td>bird</td>
-<td>NaN</td>
-<td>calling</td>
-<td>NaN</td>
-<td>four calling birds</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>5</td>
-<td>fifth</td>
-<td>ring</td>
-<td>NaN</td>
-<td>golden</td>
-<td>NaN</td>
-<td>five golden rings</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>6</td>
-<td>sixth</td>
-<td>goose</td>
-<td>a-laying</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>six geese a-laying</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>7</td>
-<td>seventh</td>
-<td>swan</td>
-<td>a-swimming</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>seven swans a-swimming</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>8</td>
-<td>eighth</td>
-<td>maid</td>
-<td>a-milking</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>eight maids a-milking</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>9</td>
-<td>ninth</td>
-<td>lady</td>
-<td>dancing</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>nine ladies dancing</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>10</td>
-<td>tenth</td>
-<td>lord</td>
-<td>a-leaping</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>ten lords a-leaping</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10</td>
-<td>11</td>
-<td>eleventh</td>
-<td>piper</td>
-<td>piping</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>eleven pipers piping</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">11</td>
-<td>12</td>
-<td>twelfth</td>
-<td>drummer</td>
-<td>drumming</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>twelve drummers drumming</td>
-</tr>
-</tbody>
-</table>
-
 </div>
-</div>
-</div>
-<div id="cell-9" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="336">
+<div id="cell-9" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Index testing</span></span>
@@ -3566,19 +3424,19 @@ two  partridges in a pear tree</code></pre>
 <span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co">#xmas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-10" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="337">
+<div id="cell-10" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>xmas[<span class="st">&#39;phrase&#39;</span>][<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<pre><code>array(&#39;two turtle doves &#39;, dtype=&#39;&lt;U17&#39;)</code></pre>
+<pre><code>&#39;two turtle doves &#39;</code></pre>
 </div>
 </div>
 </section>
 <section id="the-sing-day-function" class="level2">
 <h2 class="anchored" data-anchor-id="the-sing-day-function">The Sing Day Function</h2>
-<div id="cell-12" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="351">
+<div id="cell-12" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sing_day(dataset, num, phrase_col):</span>
@@ -3639,13 +3497,13 @@ a partridge in a pear tree.</code></pre>
 </section>
 <section id="making-the-entire-song-function" class="level2">
 <h2 class="anchored" data-anchor-id="making-the-entire-song-function">Making the Entire Song Function</h2>
-<div id="cell-14" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="352">
+<div id="cell-14" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Entire 12 Days of Christmas Song</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sing_full_song(data):</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">12</span>,<span class="dv">1</span>):</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(sing_day(xmas,k,<span class="st">&#39;phrase&#39;</span>)<span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">13</span>,<span class="dv">1</span>):</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(sing_day(data,k,<span class="st">&#39;phrase&#39;</span>)<span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>sing_full_song(xmas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
@@ -3738,6 +3596,20 @@ three french hens,
 two turtle doves, and
 a partridge in a pear tree.
 
+On the twelfth day of Christmas, my true love sent to me: 
+twelve  drummers drumming,
+eleven  pipers piping,
+ten  lords a-leaping,
+nine  ladies dancing,
+eight  maids a-milking,
+seven  swans a-swimming,
+six  geese a-laying,
+five golden rings,
+four calling birds,
+three french hens,
+two turtle doves, and
+a partridge in a pear tree.
+
 On the first day of Christmas, my true love sent to me: 
 a partridge in a pear tree.
 
@@ -3825,10 +3697,27 @@ four calling birds,
 three french hens,
 two turtle doves, and
 a partridge in a pear tree.
+
+On the twelfth day of Christmas, my true love sent to me: 
+twelve  drummers drumming,
+eleven  pipers piping,
+ten  lords a-leaping,
+nine  ladies dancing,
+eight  maids a-milking,
+seven  swans a-swimming,
+six  geese a-laying,
+five golden rings,
+four calling birds,
+three french hens,
+two turtle doves, and
+a partridge in a pear tree.
 </code></pre>
 </div>
 </div>
-<div id="cell-15" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="356">
+</section>
+<section id="song-for-new-data" class="level2">
+<h2 class="anchored" data-anchor-id="song-for-new-data">Song for New Data</h2>
+<div id="cell-16" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -3840,183 +3729,212 @@ a partridge in a pear tree.
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>On the first day of Christmas, my true love sent to me: 
-a partridge in a pear tree.
+an email from Cal Poly.
 
 On the second day of Christmas, my true love sent to me: 
-two turtle doves, and
-a partridge in a pear tree.
+two meal points, and
+an email from Cal Poly.
 
 On the third day of Christmas, my true love sent to me: 
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the fourth day of Christmas, my true love sent to me: 
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the fifth day of Christmas, my true love sent to me: 
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the sixth day of Christmas, my true love sent to me: 
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the seventh day of Christmas, my true love sent to me: 
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the eighth day of Christmas, my true love sent to me: 
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the ninth day of Christmas, my true love sent to me: 
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the tenth day of Christmas, my true love sent to me: 
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the eleventh day of Christmas, my true love sent to me: 
-eleven  pipers piping,
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+eleven  friends goodbye-ing,
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
+
+On the twelfth day of Christmas, my true love sent to me: 
+twelve  hours sleeping,
+eleven  friends goodbye-ing,
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the first day of Christmas, my true love sent to me: 
-a partridge in a pear tree.
+an email from Cal Poly.
 
 On the second day of Christmas, my true love sent to me: 
-two turtle doves, and
-a partridge in a pear tree.
+two meal points, and
+an email from Cal Poly.
 
 On the third day of Christmas, my true love sent to me: 
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the fourth day of Christmas, my true love sent to me: 
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the fifth day of Christmas, my true love sent to me: 
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the sixth day of Christmas, my true love sent to me: 
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the seventh day of Christmas, my true love sent to me: 
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the eighth day of Christmas, my true love sent to me: 
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the ninth day of Christmas, my true love sent to me: 
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the tenth day of Christmas, my true love sent to me: 
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 
 On the eleventh day of Christmas, my true love sent to me: 
-eleven  pipers piping,
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
+eleven  friends goodbye-ing,
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
+
+On the twelfth day of Christmas, my true love sent to me: 
+twelve  hours sleeping,
+eleven  friends goodbye-ing,
+ten  loads of laundry,
+nine  parties bumping,
+eight  moms a-calling,
+seven  seniors stressing,
+six  graders grading,
+five practice exams,
+four course reviews,
+three lost pens,
+two meal points, and
+an email from Cal Poly.
 </code></pre>
 </div>
 </div>
+<p>Chat GPT 4o was used in this lab to debug errors and adjust code to fit what I was trying to do. It was especially useful for making the correct strings with the right grammar in the Make Phrase function. Google searches were also used to clarify the uses of some small funcitons.</p>
 </section>
 
 </main>
