@@ -3126,7 +3126,7 @@ vertical-align: -.125em;
 
 
 <p>I am having issues with double outputs only on the rendered document.</p>
-<div id="cell-2" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="11">
+<div id="cell-2" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing data</span></span>
@@ -3135,7 +3135,7 @@ vertical-align: -.125em;
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>xmas <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://www.dropbox.com/scl/fi/qxaslqqp5p08i1650rpc4/xmas.csv?rlkey=erdxi7jbh7pqf9fh4lv4cayp5&amp;dl=1&quot;</span>)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>xmas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -3268,7 +3268,7 @@ vertical-align: -.125em;
 </div>
 <section id="pluralize-gifts-function" class="level2">
 <h2 class="anchored" data-anchor-id="pluralize-gifts-function">Pluralize Gifts Function</h2>
-<div id="cell-4" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="12">
+<div id="cell-4" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pluralize gifts</span></span>
@@ -3301,7 +3301,7 @@ vertical-align: -.125em;
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>pluralize_gift <span class="op">=</span> np.vectorize(pluralize_gift)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-5" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="23">
+<div id="cell-5" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Testing Pluralize gifts</span></span>
@@ -3318,14 +3318,13 @@ vertical-align: -.125em;
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#pluralize_gift(xmas[&#39;Gift.Item&#39;])</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>geese
-geese</code></pre>
+<pre><code>geese</code></pre>
 </div>
 </div>
 </section>
 <section id="make-a-phrase-function" class="level2">
 <h2 class="anchored" data-anchor-id="make-a-phrase-function">Make a Phrase Function</h2>
-<div id="cell-7" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="24">
+<div id="cell-7" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a phrase</span></span>
@@ -3376,7 +3375,7 @@ geese</code></pre>
 </details>
 </div>
 <p>https://stackoverflow.com/questions/8982163/how-do-i-tell-python-to-convert-integers-into-words This helped me to code a way to turn numbers into words using the inflect package.</p>
-<div id="cell-9" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="25">
+<div id="cell-9" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vector <span class="op">=</span> pd.DataFrame(xmas.loc[<span class="dv">5</span>:<span class="dv">5</span>])</span>
@@ -3397,11 +3396,10 @@ geese</code></pre>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">#xmas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>two  partridges in a pear tree
-two  partridges in a pear tree</code></pre>
+<pre><code>two  partridges in a pear tree</code></pre>
 </div>
 </div>
-<div id="cell-10" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="26">
+<div id="cell-10" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Index testing</span></span>
@@ -3426,19 +3424,19 @@ two  partridges in a pear tree</code></pre>
 <span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co">#xmas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-11" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="17">
+<div id="cell-11" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>xmas[<span class="st">&#39;phrase&#39;</span>][<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display">
+<div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>&#39;two turtle doves &#39;</code></pre>
 </div>
 </div>
 </section>
 <section id="the-sing-day-function" class="level2">
 <h2 class="anchored" data-anchor-id="the-sing-day-function">The Sing Day Function</h2>
-<div id="cell-13" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="28">
+<div id="cell-13" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sing_day(dataset, num, phrase_col):</span>
@@ -3485,21 +3483,13 @@ five golden rings,
 four calling birds,
 three french hens,
 two turtle doves, and
-a partridge in a pear tree.
-On the seventh day of Christmas, my true love sent to me: 
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
 a partridge in a pear tree.</code></pre>
 </div>
 </div>
 </section>
 <section id="making-the-entire-song-function" class="level2">
 <h2 class="anchored" data-anchor-id="making-the-entire-song-function">Making the Entire Song Function</h2>
-<div id="cell-15" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="19">
+<div id="cell-15" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Entire 12 Days of Christmas Song</span></span>
@@ -3611,115 +3601,13 @@ four calling birds,
 three french hens,
 two turtle doves, and
 a partridge in a pear tree.
-
-On the first day of Christmas, my true love sent to me: 
-a partridge in a pear tree.
-
-On the second day of Christmas, my true love sent to me: 
-two turtle doves, and
-a partridge in a pear tree.
-
-On the third day of Christmas, my true love sent to me: 
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the fourth day of Christmas, my true love sent to me: 
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the fifth day of Christmas, my true love sent to me: 
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the sixth day of Christmas, my true love sent to me: 
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the seventh day of Christmas, my true love sent to me: 
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the eighth day of Christmas, my true love sent to me: 
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the ninth day of Christmas, my true love sent to me: 
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the tenth day of Christmas, my true love sent to me: 
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the eleventh day of Christmas, my true love sent to me: 
-eleven  pipers piping,
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
-
-On the twelfth day of Christmas, my true love sent to me: 
-twelve  drummers drumming,
-eleven  pipers piping,
-ten  lords a-leaping,
-nine  ladies dancing,
-eight  maids a-milking,
-seven  swans a-swimming,
-six  geese a-laying,
-five golden rings,
-four calling birds,
-three french hens,
-two turtle doves, and
-a partridge in a pear tree.
 </code></pre>
 </div>
 </div>
 </section>
 <section id="song-for-new-data" class="level2">
 <h2 class="anchored" data-anchor-id="song-for-new-data">Song for New Data</h2>
-<div id="cell-17" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="20">
+<div id="cell-17" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -3731,108 +3619,6 @@ a partridge in a pear tree.
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>On the first day of Christmas, my true love sent to me: 
-an email from Cal Poly.
-
-On the second day of Christmas, my true love sent to me: 
-two meal points, and
-an email from Cal Poly.
-
-On the third day of Christmas, my true love sent to me: 
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the fourth day of Christmas, my true love sent to me: 
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the fifth day of Christmas, my true love sent to me: 
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the sixth day of Christmas, my true love sent to me: 
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the seventh day of Christmas, my true love sent to me: 
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the eighth day of Christmas, my true love sent to me: 
-eight  moms a-calling,
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the ninth day of Christmas, my true love sent to me: 
-nine  parties bumping,
-eight  moms a-calling,
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the tenth day of Christmas, my true love sent to me: 
-ten  loads of laundry,
-nine  parties bumping,
-eight  moms a-calling,
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the eleventh day of Christmas, my true love sent to me: 
-eleven  friends goodbye-ing,
-ten  loads of laundry,
-nine  parties bumping,
-eight  moms a-calling,
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the twelfth day of Christmas, my true love sent to me: 
-twelve  hours sleeping,
-eleven  friends goodbye-ing,
-ten  loads of laundry,
-nine  parties bumping,
-eight  moms a-calling,
-seven  seniors stressing,
-six  graders grading,
-five practice exams,
-four course reviews,
-three lost pens,
-two meal points, and
-an email from Cal Poly.
-
-On the first day of Christmas, my true love sent to me: 
 an email from Cal Poly.
 
 On the second day of Christmas, my true love sent to me: 
